@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Tailwind Landing Page</title>
+    <style>
+        body{
+            background: linear-gradient(120deg, rgb(3, 53, 115), rgb(41, 1, 57), rgb(73, 0, 125))
+        }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="relative container mx-auto p-6">
+  
+      <div class="flex items-center justify-between">
+
+        <div class="pt-2">
+          <h1 class="text-white font-extrabold text-3xl font-mono">Mat-in and out</h1>
+        </div>
+
+        <div class="hidden space-x-6 md:flex">
+          <a href="#" class="hover:text-cyan-400 text-white">Premise</a>
+          <a href="#" class="hover:text-cyan-400 text-white">Product</a>
+          <a href="#" class="hover:text-cyan-400 text-white">About Us</a>
+          <a href="#" class="hover:text-purple-400 text-white">Testimonials</a>
+          <a href="#" class="hover:text-purple-500 text-white">Community</a>
+        </div>
+        
+        <a
+          href="#"
+          class="hidden p-3 px-6 pt-2 text-white bg-purple-800 rounded-xl baseline hover:bg-purple-700 md:block"
+          >Get Started</a
+        >
+
+    
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      
+      <div class="md:hidden bg-white">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold sm:w-auto sm:self-center left-6 right-6 drop-shadow-md bg-white"
+        >
+          <!-- <a href="#"></a> -->
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+    </nav>
+
+  
+    <section id="hero">
+      
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+      
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left text-white"
+          >
+            Better software with better team and better cloud. Sounds so corny lol
+          </h1>
+          <p class="max-w-sm text-center text-gray-50 md:text-left">
+            We make it simple to manage individual projects while keeping the larger group projects in mind.
+            Hopefully...
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-cyan-600 rounded-xl baseline hover:bg-cyan-500"
+              >Discover</a
+            >
+          </div>
+        </div>
+    
+        <div class="md:w-1/2">
+          <img src="img/interface-3614766_1280.png" class="rounded-xl" alt="" />
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="features">
+  
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left text-white">
+            What sets us apart from the competition?
+          </h2>
+          <p class="max-w-sm text-center text-gray-50 md:text-left">
+            The funny part is we ain't even in the competition.
+            I'm just trying to fill this empty space with random text.
+            I don't want to use lorem so yeah, no competition. 
+          </p>
+        </div>
+
+      
+        <div class="flex flex-col space-y-8 md:w-1/2">
+  
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+      
+            <div class="rounded-xl bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="px-4 py-2 text-white rounded-xl md:py-1 bg-purple-700">
+                  01
+                </div>
+                <h3 class="font-bold md:mb-4 md:hidden">
+                  The company's no work policy
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block text-white">
+                The company's no work policy
+              </h3>
+              <p class="text-gray-50">
+                Now I ran out of things to say so Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque delectus, expedita fugiat incidunt distinctio commodi quasi, dolor hic dolorum quos odit eum, sint doloremque recusandae ipsa a vero dolores sapiente! Ut, dolorem iusto!
+              </p>
+            </div>
+          </div>
+
+      
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+        
+            <div class="rounded-xl bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-xl md:py-1 bg-purple-700"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Advanced built-in reports
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block text-white">
+                Work remotely
+              </h3>
+              <p class="text-gray-50">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eius velit molestiae dolor, illo vitae quisquam sequi officiis unde aperiam consequuntur voluptas, sunt magnam suscipit quibusdam voluptatum excepturi eligendi iure!
+              </p>
+            </div>
+          </div>
+
+
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+        
+            <div class="rounded-xl bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-xl md:py-1 bg-purple-700"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  Everything you need is here
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block text-white">
+                Everything you need is here
+              </h3>
+              <p class="text-gray-50">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos optio fugiat atque labore fuga quod totam, eveniet deleniti molestias est molestiae obcaecati saepe minima tempora veritatis consequuntur laudantium iusto beatae!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="testimonials">
+    
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+      
+        <h2 class="text-4xl font-bold text-center text-white">
+          Testimonials
+        </h2>
+      
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+      
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:w-1/3"
+          >
+            <img src="img/images (2).jpeg" class="w-16 -mt-14 rounded-full" alt="" />
+            <h5 class="text-lg font-bold">Naruto Uzumaki</h5>
+            <p class="text-sm text-gray-900">
+              “Mat-in and out has helped me immensely in taking full control of my chakra in order to become the village's Hakoge (efficiently using the nine-tailed fox)”
+            </p>
+          </div>
+
+          
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-gray-200 md:flex md:w-1/3"
+          >
+            <img src="img/sasuke2.jpeg" class="w-16 -mt-14 rounded-full" alt="" />
+            <h5 class="text-lg font-bold">Sasuke Uchiha</h5>
+            <p class="text-sm text-gray-900">
+              “This company helped me in my training days to become the best.
+              Keeping in mind the goal of taking revenge on Itachi for slaughtering the Uchiha clan.”
+            </p>
+          </div>
+
+    
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-xl bg-gray-200 md:flex md:w-1/3"
+          >
+            <img src="img/sakura.jpeg" class="w-16 -mt-14 rounded-full" alt="" />
+            <h5 class="text-lg font-bold">Sakura Haruno</h5>
+            <p class="text-sm text-gray-900">
+              "I'm just here because Sasuke is here too.
+              Great company by the way.”
+            </p>
+          </div>
+        </div>
+
+        <div class="my-16">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-purple-700 rounded-xl baseline hover:bg-purple-600"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black rounded-t-xl">
+    
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+      
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+    
+          <div>
+            <h1 class="text-white font-extrabold text-3xl">Mat-in and out</h1>
+            <p class="text-white pt-2">click on the icons below</p>
+          </div>
+        
+          <div class="flex justify-center space-x-4">
+          
+            <a href="https://twitter.com/InamdarInamdar0">
+              <img src="img/icon-twitter.svg" alt="" class="h-8" />
+            </a>
+          
+            <a href="https://www.instagram.com/lord_matin_1/">
+              <img src="img/icon-instagram.svg" alt="" class="h-8" />
+            </a>
+
+            <a href="https://github.com/77mateen">
+              <img src="img/github-logo-6532.png" alt="">
+            </a>
+          </div>
+        </div>
+    
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-purple-500">Home</a>
+            <a href="#" class="hover:text-purple-500">Testimonials</a>
+            <a href="#" class="hover:text-purple-500">Products</a>
+            <a href="#" class="hover:text-purple-500">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#" class="hover:text-purple-500">Join us</a>
+            <a href="#" class="hover:text-purple-500">Become a weeb</a>
+            <a href="#" class="hover:text-purple-500">Stay a weeb</a>
+          </div>
+        </div>
+
+  
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-xl focus:outline-none bg-gray-200"
+                placeholder="Type something already"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-xl bg-purple-700 hover:bg-purple-600 focus:outline-none"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, I don't know what to write here
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
